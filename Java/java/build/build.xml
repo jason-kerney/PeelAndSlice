@@ -1,0 +1,26 @@
+<project name="LegacyCodeTalk" basedir="." default="buildJarFile">
+	<property file="properties/general.properties" />
+	<target name="compile" depends="cleanUp">
+		<mkdir dir="${build}" />
+		<delete dir="${build}/com/spun" />
+		<echo>${targetJavaClass}</echo>
+		<javac srcdir="${src}" destdir="${build}" debug="true" includes="${targetJavaClass}" target="1.6" listfiles="false" encoding="UTF-16">
+			<exclude name="**/tests/**" if="excludeTests" />
+			<classpath>
+				<fileset dir="${src}/jars">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+	<target name="cleanUp">
+		<delete dir="${build}" />
+	</target>
+	<target name="buildJarFile" depends="compile">
+		<delete file="${jar}" failonerror="false" />
+		<jar destfile="${jar}" basedir="${build}" update="false">
+			<include name="com/spun/**" />
+		</jar>
+	</target>
+</project>
+

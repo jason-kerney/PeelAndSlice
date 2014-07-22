@@ -1,36 +1,46 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+*.received.*
+nuget_packages/
 
-# Folder config file
-Desktop.ini
+#################
+## Eclipse
+#################
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+*.pydevproject
+.project
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*.coverage
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+build/Output
+# External tool builders
+.externalToolBuilders/
 
-# =========================
-# Operating System Files
-# =========================
+# Locally stored "Eclipse launch configurations"
+*.launch
 
-# OSX
-# =========================
+# CDT-specific
+.cproject
 
-.DS_Store
-.AppleDouble
-.LSOverride
+# PDT-specific
+.buildpath
 
-# Icon must ends with two \r.
-Icon
+#######################
+## Java
+#######################
 
-# Thumbnails
-._*
+*.class
+/bin
+*.received.*
+# Package Files #
 
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
+*.war
+*.ear

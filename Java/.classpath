@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="**/*.svn|com/spun/llewellyn/talks/legacycode/required/|jars/" kind="src" path="java/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="java/src/jars/LegacyRequiredCode.jar"/>
+	<classpathentry kind="lib" path="java/src/jars/cglib-nodep-3.1.jar"/>
+	<classpathentry kind="lib" path="java/src/jars/easymock-3.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="java/src/jars/objenesis-2.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

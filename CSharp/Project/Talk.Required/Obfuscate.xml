@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE dotfuscator SYSTEM "http://www.preemptive.com/dotfuscator/dtd/dotfuscator_v2.2.dtd">
+<dotfuscator version="2.2">
+  <!--This is application generated code. Do not edit manually.-->
+  <input>
+    <asmlist>
+      <inputassembly>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="D:\Projects\Talks\legacy_code\CSharp\Project\Talk.Required\bin\Release" name="Talk.Required.dll" />
+      </inputassembly>
+    </asmlist>
+  </input>
+  <output>
+    <file dir="${configdir}\Dotfuscated" />
+  </output>
+  <renaming>
+    <option>explicitoverrides</option>
+    <mapping>
+      <mapoutput overwrite="false">
+        <file dir="${configdir}\Dotfuscated" name="Map.xml" />
+      </mapoutput>
+    </mapping>
+    <referencerulelist />
+  </renaming>
+  <smartobfuscation>
+    <smartobfuscationreport verbosity="all" overwrite="false" />
+  </smartobfuscation>
+</dotfuscator>
