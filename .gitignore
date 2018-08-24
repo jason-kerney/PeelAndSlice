@@ -49,7 +49,7 @@ build/Output
 #######################
 ## ECMA Script
 #######################
-/node_modules/
+node_modules/
 
 #######################
 ## General
