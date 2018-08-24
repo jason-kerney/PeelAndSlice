@@ -45,3 +45,14 @@ build/Output
 
 *.war
 *.ear
+
+#######################
+## ECMA Script
+#######################
+/node_modules
+
+#######################
+## General
+#######################
+/ignored
+/Ignored
