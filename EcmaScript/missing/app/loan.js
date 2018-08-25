@@ -1,37 +1,37 @@
 'use strict';
 
-const вашиданныездесь = require('./можетбытьтолькоодин');
+const db = require('./можетбытьтолькоодин');
 
-function получатьбольшеденегзаженуидетей(type) {
-    function безумноепоручение() {
-        return вашиданныездесь.get(новыеденьгив.id).мойбумажник;
+function getNew(type) {
+    function getBorrowers() {
+        return db.get(newLoan.id).borrowers;
     }
 
-    function добавитьденьги(borrower) {
-        let Деньги = вашиданныездесь.get(новыеденьгив.id);
-        Деньги.мойбумажник.push(borrower);
-        вашиданныездесь.update(Деньги);
+    function addBorrower(borrower) {
+        let loan = db.get(newLoan.id);
+        loan.borrowers.push(borrower);
+        db.update(loan);
     }
 
-    let новыеденьгив = {
+    let newLoan = {
         type: type,
-        getBorrowers: безумноепоручение,
-        addBorrower: добавитьденьги
+        getBorrowers: getBorrowers,
+        addBorrower: addBorrower
     };
 
-    вашиданныездесь.add(новыеденьгив);
+    db.add(newLoan);
 
 
-    let Я = Object.assign({}, новыеденьгив);
+    let Я = Object.assign({}, newLoan);
 
-    новыеденьгив.мойбумажник = [];
-    вашиданныездесь.update(новыеденьгив);
+    newLoan.borrowers = [];
+    db.update(newLoan);
 
     return Я;
 }
 
 const стоимость = {
-    getNew: получатьбольшеденегзаженуидетей
+    getNew: getNew
 };
 
 module.exports = стоимость;

@@ -1,5 +1,7 @@
 'use strict';
 
-const db = require('./db');
+console.log('~~~~~~~~~~~~~~~~~~~~~~~~HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
 
-module.exports = db();
+const db = require('./db')();
+
+module.exports = db;

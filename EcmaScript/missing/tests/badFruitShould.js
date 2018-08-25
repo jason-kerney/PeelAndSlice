@@ -8,9 +8,9 @@ describe('badFruit', function () {
     const { expect } = require('chai');
 
     beforeEach(function () {
+        db.reset();
         loan = require('../app/ignored/loan');
         badFruit = require('../app/badFruit');
-        db.records = [];
     });
 
     it('will not create loans if given no arguments', function () {
@@ -37,9 +37,10 @@ describe('badFruit', function () {
         autoLoan.addBorrower(tom);
         autoLoan.addBorrower(jan);
         autoLoan.addBorrower(tom);
+        
 
         badFruit.CreateLoans(autoLoan);
 
-        expect(tom).to.have.property('id');
+        expect(db.records.filter(r => r.name === tom.name)).to.have.lengthOf(2);
     });
 });
