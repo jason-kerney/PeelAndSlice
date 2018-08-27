@@ -1,8 +1,9 @@
 const ntscFrameRate = []
 
-module.exports = (function () {
-    let obj = {
-        createCountdownFrames: function (http, videoMaker) {
+let value = (function () {
+    function getCreateCountdownFrames (frameRate) {
+        return function (http, videoMaker) {
+            console.log(frameRate);
             const type = http.request.params["TvFormat"];
             let frames = 0;
 
@@ -14,8 +15,13 @@ module.exports = (function () {
                 videoMaker.createFrame(frames[i]);
             }
         }
+    }
+
+    let obj = {
+        createCountdownFrames: getCreateCountdownFrames((frameRate = ntscFrameRate, frameRate))
     };
 
-    let frameRate = ntscFrameRate;
     return obj;
 })();
+
+module.exports = value;
