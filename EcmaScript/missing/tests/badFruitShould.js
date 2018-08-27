@@ -14,7 +14,7 @@ describe('badFruit', function () {
     });
 
     it('will not create loans if given no arguments', function () {
-        badFruit.CreateLoans();
+        badFruit.createLoans();
         expect(db.records).to.have.lengthOf(0);
     });
 
@@ -24,7 +24,7 @@ describe('badFruit', function () {
 
         autoLoan.addBorrower(tom);
 
-        badFruit.CreateLoans(autoLoan);
+        badFruit.createLoans(autoLoan);
 
         expect(tom).to.have.property('id');
     });
@@ -39,7 +39,7 @@ describe('badFruit', function () {
         autoLoan.addBorrower(tom);
         
 
-        badFruit.CreateLoans(autoLoan);
+        badFruit.createLoans(autoLoan);
 
         expect(db.records.filter(r => r.name === tom.name)).to.have.lengthOf(2);
     });
