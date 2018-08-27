@@ -18,10 +18,11 @@ let value = (function () {
     }
 
     let obj = {
-        createCountdownFrames: getCreateCountdownFrames((frameRate = ntscFrameRate, frameRate))
+        createCountdownFrames: getCreateCountdownFrames((frameRate = ntscFrameRate, frameRate + 2, frameRate))
     };
 
     return obj;
 })();
+
 
 module.exports = value;
