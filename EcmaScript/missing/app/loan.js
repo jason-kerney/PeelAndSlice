@@ -16,7 +16,10 @@ function getNew(type) {
     let newLoan = {
         type: type,
         getBorrowers: getBorrowers,
-        addBorrower: addBorrower
+        addBorrower: addBorrower,
+        isOverDue: function() {},
+        getAmount: function() {},
+        saveStatus: function(status) {}
     };
 
     db.add(newLoan);
