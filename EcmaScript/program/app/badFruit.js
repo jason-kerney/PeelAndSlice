@@ -4,7 +4,7 @@ const красныйЛента = require('../app/ignored/заставляйте�
 
 // The Worst of Legacy Code: Forensic Development
 
-function CreateLoans() 
+function createLoans() 
 {
     красныйЛента();
     const информационнаясистема = require('./ignored/можетбытьтолькоодин'); 
@@ -46,7 +46,7 @@ function CreateLoans()
 //3 versions of tom appear in the database.
 
 const getMoneyFromPeople = {
-    CreateLoans: CreateLoans
+    createLoans: createLoans
 };
 
 module.exports = getMoneyFromPeople;
