@@ -7,9 +7,9 @@ function calulateTotalMortage(name, db) {
     if(Boolean(person.getFinancalInformation().getHomeEquityLoan()) || person.getFinancalInformation().getHomeEquityLoan() === 0) {
         return (
             person.getFinancalInformation().getHomeEquityLoan() + 
-            Boolean(person.getFinancalInformation().getFirstMortagePayment()) 
+            (Boolean(person.getFinancalInformation().getFirstMortagePayment()) 
                 ? person.getFinancalInformation().getFirstMortagePayment() 
-                : 0
+                : 0)
         );
     }
     if(Boolean(person.getFinancalInformation().getFirstMortagePayment()) || person.getFinancalInformation().getFirstMortagePayment() === 0) {
