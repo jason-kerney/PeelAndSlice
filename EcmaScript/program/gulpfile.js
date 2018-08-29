@@ -25,7 +25,7 @@ gulp.task('lint', () => {
 
 gulp.task('pre-test', function () {
     return gulp.src(sourceFiles)
-        .pipe(istanbul())
+        .pipe(istanbul({ includeUntested: true }))
         .pipe(istanbul.hookRequire());
 });
 
