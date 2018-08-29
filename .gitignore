@@ -58,6 +58,7 @@ packages/
 ## ECMA Script
 #######################
 node_modules/
+coverage/
 
 #######################
 ## General
