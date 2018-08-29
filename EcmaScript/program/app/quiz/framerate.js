@@ -2,7 +2,6 @@ const ntscFrameRate = 33;
 
 function getCreateCountdownFrames(frameRate) {
     return function (http, videoMaker) {
-        console.log(frameRate);
         const type = http.request.params["TvFormat"];
         let frames = 0;
 
