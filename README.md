@@ -1,10 +1,14 @@
 # PeelAndSlice
 A Presentation of Tools that makes legacy code easier to handle
 
+## Languages
+| Language | Status |
+|----------|--------|
+| [Java](https://github.com/jason-kerney/PeelAndSlice.Java) | [![build](https://github.com/jason-kerney/PeelAndSlice.Java/actions/workflows/test.yml/badge.svg)](https://github.com/jason-kerney/PeelAndSlice.Java/actions/workflows/test.yml) |
+
 Steps:
 1. Download and open the class BadFruit.
 1. Try to replicate the error senario of calling createLoan with 3 new loans.
-
 
 ## Video's
 See _Episode 12: Using Approval Tests in .NET_ (in 3 parts) on
