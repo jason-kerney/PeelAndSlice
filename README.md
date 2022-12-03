@@ -5,7 +5,7 @@ A Presentation of Tools that makes legacy code easier to handle
 | Language | Status |
 |----------|--------|
 | [Java](https://github.com/jason-kerney/PeelAndSlice.Java) | [![build](https://github.com/jason-kerney/PeelAndSlice.Java/actions/workflows/test.yml/badge.svg)](https://github.com/jason-kerney/PeelAndSlice.Java/actions/workflows/test.yml) |
-| [C#](https://github.com/jason-kerney/PeelAndSlice.Net) | [![Build and Test](https://github.com/jason-kerney/PeelAndSlice.Net/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/jason-kerney/PeelAndSlice.Net/actions/workflows/build-and-test.yml) |
+| [C#](https://github.com/jason-kerney/PeelAndSlice.Net) | [![Build](https://github.com/jason-kerney/PeelAndSlice.Net/actions/workflows/build.yml/badge.svg)](https://github.com/jason-kerney/PeelAndSlice.Net/actions/workflows/build.yml) |
 
 Steps:
 1. Download and open the class BadFruit.
